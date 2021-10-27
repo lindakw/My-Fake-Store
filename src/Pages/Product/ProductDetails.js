@@ -3,10 +3,10 @@ import { useParams } from 'react-router';
 import { IoAddCircleOutline, IoRemoveCircleOutline } from 'react-icons/io5';
 import CartContext from '../../Context/CartContext';
 import './ProductDetails.css'
+import Button from '../../Fragments/Button';
 
 const ProductDetails = () => {
     const [cart, setCart] = useContext(CartContext);
-    // const history = useHistory();
     
     const addToCart = () => {
         const item = {
@@ -38,8 +38,11 @@ const ProductDetails = () => {
     })
     return (
         <div className="prod-container">
-            <h3 className="category">Category: {prodDetails.category}</h3>
-            <h1>{prodDetails.title}</h1>
+            <div>
+            <h3 className="prod-title">Category: {prodDetails.category}</h3>
+            <h1 className="prod-title">{prodDetails.title}</h1>
+            </div>
+            
             <div className="prod-info">
                 <img className="prod-img" alt="product" src={prodDetails.image}></img>
                 <p>{prodDetails.description}</p>
@@ -50,7 +53,7 @@ const ProductDetails = () => {
                 <p>{quantity}</p>
                 <IoRemoveCircleOutline className="qty-btn" onClick={minusOne} />
             </div>
-            <button onClick={addToCart}>Add to cart</button>
+            <Button className="item-btn" onClick={addToCart}>Add to cart</Button>
         </div>
     )
 }

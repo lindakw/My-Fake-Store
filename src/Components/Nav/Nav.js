@@ -9,9 +9,8 @@ const Nav = () => {
     const qtyCount = cart.map((count) => count.count);
     const qtyTotals = qtyCount.reduce((ac, curr) => ac + curr, 0);
     return (
-        <div>
-           <nav className="nav-bar">
-            <ul>
+        <div className="nav-bar">
+            <ul className="li-link">
                 <li className="li-link">
                 <Link to ="/" style={{textDecoration: 'none'}}><h1 className="store-name">BORAHAE BOUTIQUE</h1></Link>
                 </li>
@@ -22,10 +21,8 @@ const Nav = () => {
                 <Link to ="/cart" className="Nav_link"><IoBagOutline></IoBagOutline></Link>
                 {qtyTotals}
                 </li>
-                
             </ul>
-            
-           </nav> 
+
         </div>
     )
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 import '../../Pages/Products/Products.css'
 import { useHistory } from 'react-router';
+import Button from '../../Fragments/Button';
 
 const Item = (props) => {
     const history = useHistory();
@@ -11,8 +12,8 @@ const Item = (props) => {
             </div>
             <div className="product-info">
                 <p className="item-txt">{props.prod.title}</p>
-                <p className="item-txt">${props.prod.price}</p>
-                <button className="item-btn" onClick={() => history.push(`/product/${props.prod.id}`)}>View Details</button>
+                <p className="item-txt">${props.prod.price.toFixed(2)}</p>
+                <Button className="item-btn" onClick={() => history.push(`/product/${props.prod.id}`)}>View Details</Button>
             </div>           
         </div>
     )

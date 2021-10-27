@@ -23,8 +23,7 @@ const Form = () => {
                 <br />
                 <label> Security Code: <input className="inputs-box" type="text" maxlength="3" size="5" placeholder="..." ></input></label>
                 <label> Exp Date: <input className="inputs-box" type="text" placeholder="05/20222" ></input></label>
-            </div>
-           
+           <div>
             <button
                 className="checkoutButton"
                 onClick={() => {
@@ -35,6 +34,8 @@ const Form = () => {
             >
                 <h1>Purchase</h1>
             </button>
+            </div>
+            </div>
             
         </div>
     )

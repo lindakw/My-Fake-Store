@@ -34,8 +34,19 @@
 .cartTotals {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
 .totals-info {
     padding-right: 20px;
 }
+
+.item-btn:hover {
+    background-color: #f7fafa;
+  }
+  
+  .item-btn:focus {
+    border-color: #008296;
+    box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+    outline: 0;
+  }

@@ -2,7 +2,10 @@
 
 
 .nav-bar {
+    display: flex;
     background-color: whitesmoke; 
+    height: 10vh;
+    box-shadow: rgba(213, 217, 217, .5) 0 5px 5px 0;
 }
 
 .store-name {
@@ -12,19 +15,16 @@
 }
 
 .li-link {
-    display: inline-block;
+    display: flex;
+    align-items: center;
     padding: 20px;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 .Nav_link {
     color: rgb(11, 11, 11);
 }
 
-.li-bag {
-   display: inline-flex;
-    justify-content: flex-end;
-}
 .li-bag:hover {
     font-size: 2em;
 }

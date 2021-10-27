@@ -1,6 +1,6 @@
 .cart-container {
     display: flex;
-    text-align: center;
+    text-align: left;
 }
 
 .checkout-title {

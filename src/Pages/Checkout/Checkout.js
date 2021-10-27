@@ -17,10 +17,10 @@ const Checkout = () => {
                 <div className="product_cart_container">
                     {cart.map((item, index) => (
                         <div className="cart_item">
-                            <h3>
+                            <p>
                             {index + 1}. {item.title}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;QTY: {item.count}
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Price: ${item.price * item.count}
-                            </h3>
+                            </p>
                             <br />
                         </div>
                     ))}
