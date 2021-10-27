@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+
+
+.nav-bar {
+    background-color: whitesmoke; 
+}
+
+.store-name {
+    color: rgb(101, 13, 138);
+    font-size: 2.5em;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.li-link {
+    display: inline-block;
+    padding: 20px;
+    font-size: 1.5em;
+}
+
+.Nav_link {
+    color: rgb(11, 11, 11);
+}
+
+.li-bag {
+   display: inline-flex;
+    justify-content: flex-end;
+}
+.li-bag:hover {
+    font-size: 2em;
+}

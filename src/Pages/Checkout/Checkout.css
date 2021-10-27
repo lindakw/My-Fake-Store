@@ -1,0 +1,12 @@
+.cart-container {
+    display: flex;
+    text-align: center;
+}
+
+.checkout-title {
+    margin-bottom: 25px;
+}
+
+.cart-item {
+    margin: 20px;
+}
