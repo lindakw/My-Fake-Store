@@ -8,7 +8,7 @@ import Button from '../../Fragments/Button';
 const ProductDetails = () => {
     const [cart, setCart] = useContext(CartContext);
     
-    const addToCart = () => {
+    const addToCart = (id) => {
         const item = {
             id: prodDetails.id, 
             title: prodDetails.title, 
@@ -16,8 +16,15 @@ const ProductDetails = () => {
             image: prodDetails.image, 
             count: quantity
         }
-        setCart(current => [...current, item]);
-        alert("Product has been added to cart!")
+        const check_index = cart.findIndex(x => x.id === item.id);
+        if (check_index !== -1) {
+            cart[check_index].count++;
+            alert("Qty updated!");
+        } else {
+            setCart(current => [...current, item]);
+            alert("Product has been added to cart!")
+        }
+        
     }
     
     const [quantity, setQuantity] = useState(1);
